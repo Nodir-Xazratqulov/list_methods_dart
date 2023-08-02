@@ -8,4 +8,10 @@
         list: return answer
 */
 
-void main() {}
+func(List list1){
+  list1.add('bexi');
+  return list1;
+}
+void main() {
+  print(func(['olma','banan','kivi','limon']));
+}
