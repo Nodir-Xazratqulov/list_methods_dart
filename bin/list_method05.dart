@@ -10,4 +10,15 @@
         list: return answer
 */
 
-void main() {}
+func(List list1, List list2){
+  int b = list1.removeLast();
+  list2.add(b);
+  
+
+  // List a = list2 +list1.last;
+  return list1+list2;
+}
+
+void main() {
+  print(func([1,2,3], [4,5,6]));
+}
