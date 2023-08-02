@@ -8,4 +8,10 @@
         list: return answer
 */
 
-void main() {}
+
+func(List s, int i){
+  return s.getRange(i, i+1);
+}
+void main() {
+  print(func([1,2,3,4,5],4));
+}
