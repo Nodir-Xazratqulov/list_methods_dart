@@ -6,5 +6,26 @@
     Returns:
         list: return answer
 */
+func(List list1){
+  int i=0;
+  int s=0;
+  int k=0;
+  
+  while (i<list1.length) {
+    if (list1[i]==1) {
+      s++;
+    }else if(list1[i]==0){
+      k++;
+    }
+    i++;
+  }
+  return [s,k];
 
-void main() {}
+
+}
+
+
+
+void main() {
+  print(func([1,0,1,1,1,1,0,0,0]));
+}
