@@ -7,4 +7,19 @@
         list: return answer
 */
 
-void main() {}
+
+
+func(List<String> list1){
+  List count=[];
+  int k=0;
+  for (int i=0; i<list1.length; i++) {
+    if(list1[i]=='apple'){
+      count.add(i);
+      k++;
+    }
+  }
+  return count;
+}
+void main() {
+  print(func(['apple','banana','pear', 'apple']));
+}
