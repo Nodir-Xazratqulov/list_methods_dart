@@ -6,5 +6,17 @@
     Returns:
         int: return answer
 */
-
-void main() {}
+func(List list1){
+  int count=0;
+  int i=0;
+  while (i<list1.length) {
+    if(list1[i]==0){
+      count++;
+    }
+    i++;
+  }
+  return count;
+}
+void main() {
+  print(func([1,0,0,1,1,1,0]));
+}
